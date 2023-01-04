@@ -1,0 +1,24 @@
+{
+  "id": "nepheshria",
+  "name": "Nepheshria's Game System",
+  "title": "Nepheshria's Game System",
+  "description": "A FoundryVTT game System to play to Nepheshria",
+  "author": "Villerot Justin",
+  "version": 0.1,
+  "minimumCoreVersion": "",
+  "compatibleCoreVersion": "",
+  "esmodules": [
+    "nepheshria.json"
+  ],
+  "styles": [
+    "nepheshria.css"
+  ],
+  "packs": [
+
+  ],
+  "languages": [
+
+  ],
+  "gridDistance": 1,
+  "gridUnits": "meter"
+}
