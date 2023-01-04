@@ -1,16 +1,16 @@
 {
-  "id": "nepheshria",
-  "title": "Nepheshria",
-  "description": "The Game system for Nepheshria!",
+  "name": "nepheshria",
   "version": "0.0.1",
-  "compatibility": {
-    "minimum": 10,
-    "verified": "10.287",
-    "maximum": 10
-  },
-  "authors": [{
-    "name": "Asacolips"
-  }],
+  "title": "Nepheshria",
+  "url": "https://github.com/Nepheshria/Nepheshria-FoundryVTT-GameSystem",
+  "description": "The Game system for Nepheshria!",
+  "license": "LICENCE.txt",
+  "authors": [
+    {
+      "name": "Villerot Justin",
+      "url": "https://villerotjustin.github.io/Portefolio/index.html"
+    }
+  ],
   "esmodules": ["module/nepheshria.mjs"],
   "styles": ["css/nepheshria.css"],
   "scripts": [],
@@ -22,13 +22,16 @@
       "path": "lang/en.json"
     }
   ],
-  "gridDistance": 5,
-  "gridUnits": "ft",
+  "compatibility": {
+    "minimum": 10,
+    "verified": "10.288",
+    "maximum": 10
+  },
+  "gridDistance": 1,
+  "gridUnits": "meter",
   "primaryTokenAttribute": "health",
-  "secondaryTokenAttribute": "power",
-  "url": "",
+  "secondaryTokenAttribute": "energy",
   "manifest": "",
   "download": "",
-  "license": "LICENSE",
   "changelog": "CHANGELOG.md"
 }
