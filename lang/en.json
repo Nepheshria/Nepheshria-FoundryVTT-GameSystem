@@ -1,0 +1,22 @@
+{
+  "NEPHESHRIA.AbilityStr": "Strength",
+  "NEPHESHRIA.AbilityCon": "Constitution",
+  "NEPHESHRIA.AbilityDex": "Dexterity",
+  "NEPHESHRIA.AbilityInt": "Intelligence",
+  "NEPHESHRIA.AbilityWis": "Wisdom",
+  "NEPHESHRIA.AbilityCha": "Charisma",
+
+  "NEPHESHRIA.AbilityStrAbbr": "str",
+  "NEPHESHRIA.AbilityConAbbr": "con",
+  "NEPHESHRIA.AbilityDexAbbr": "dex",
+  "NEPHESHRIA.AbilityIntAbbr": "int",
+  "NEPHESHRIA.AbilityWisAbbr": "wis",
+  "NEPHESHRIA.AbilityChaAbbr": "cha",
+
+  "NEPHESHRIA.EffectCreate": "Create Effect",
+  "NEPHESHRIA.EffectToggle": "Toggle Effect",
+  "NEPHESHRIA.EffectEdit": "Edit Effect",
+  "NEPHESHRIA.EffectDelete": "Delete Effect",
+
+  "NEPHESHRIA.Add": "Add"
+}
