@@ -58,24 +58,59 @@
     }
   },
   "Item": {
-    "types": ["item", "weapon", "equipment", "consumable", "skill", "mastery", "spell"],
+    "types": ["weapon", "equipment", "consumable", "skill", "mastery", "spell", "feature"],
     "templates": {
       "base": {
         "description": ""
+      },
+      "item": {
+        "templates": ["base"],
+        "quantity": 1,
+        "weight": 0
       }
     },
-    "item": {
-      "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    "equipment": {
+      "templates": ["base", "item"],
+      "damage": {
+        "type": "",
+        "formula": ""
+      }
     },
-    "feature": {
-      "templates": ["base"]
+    "consumable": {
+      "templates": ["base", "item"],
+      "damage": {
+        "type": "",
+        "formula": ""
+      }
+    },
+    "skill": {
+      "templates": ["base", "item"],
+      "damage": {
+        "type": "",
+        "formula": ""
+      }
+    },
+    "mastery": {
+      "templates": ["base", "item"],
+      "damage": {
+        "type": "",
+        "formula": ""
+      }
     },
     "spell": {
-      "templates": ["base"],
-      "spellLevel": 1
+      "templates": ["base", "item"],
+      "damage": {
+        "type": "",
+        "formula": ""
+      }
+    },
+    "feature": {
+      "templates": ["base", "item"],
+      "damage": {
+        "type": "",
+        "formula": ""
+      }
     }
+
   }
 }

@@ -11,8 +11,12 @@
       "url": "https://villerotjustin.github.io/Portefolio/index.html"
     }
   ],
-  "esmodules": [],
-  "styles": [],
+  "esmodules": [
+    "./module/nepheshria.js"
+  ],
+  "styles": [
+    "./css/nepheshria.css"
+  ],
   "scripts": [],
   "packs": [],
   "languages": [
