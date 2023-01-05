@@ -13,11 +13,9 @@
           "min": 0,
           "max": 10
         },
+        "armor": 0,
         "biography": ""
-      }
-    },
-    "character": {
-      "templates": ["base"],
+      },
       "abilities": {
         "Strength": {
           "value": 50
@@ -42,8 +40,20 @@
         }
       }
     },
+    "character": {
+      "templates": ["base", "abilities"],
+      "alignment": "",
+      "race": "",
+      "profession": "",
+      "age": 0,
+      "passionTheme": [
+        "",
+        "",
+        ""
+      ]
+    },
     "npc": {
-      "templates": ["base"],
+      "templates": ["base", "abilities"],
       "cr": 0
     }
   },
