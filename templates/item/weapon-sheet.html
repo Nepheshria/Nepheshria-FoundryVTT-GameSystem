@@ -1,8 +1,61 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
-        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"></h1>
+        <h1><input name="weapon.name" type="text" value="{{item.name}}" placeholder="Name"></h1>
     </header>
-    <h2>Description: </h2>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <h2>{{localize "nepheshria.item.itemInfo"}}:</h2>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{localize "nepheshria.item.ability"}}</td>
+                    <td>
+                        <select name="weapon.ability">
+                            {{#select item.ability}}
+                            {{#each config.ability as |name ability|}}
+                            <option value="{{ability}}">{{name}}</option>
+                            {{/each}}
+                            {{/select}}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{localize "nepheshria.item.damage"}}</td>
+                    <td>
+                        <input name="weapon.damage" type="text" value="{{item.damage}}" data-dtype="Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{localize "nepheshria.item.requirement"}}</td>
+                    <td>
+                        Content
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{localize "nepheshria.item.value"}}</td>
+                    <td>
+                        <input name="weapon.value" type="number" value="{{item.value}}" data-dtype="Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{localize "nepheshria.item.weight"}}</td>
+                    <td>
+                        <input name="weapon.weight" type="number" value="{{item.weight}}" data-dtype="Number">
+                    </td>
+                </tr>
+                <tr>
+                    <td>{{localize "nepheshria.item.quantity"}}</td>
+                    <td>
+                        <input name="weapon.quantity" type="number" value="{{item.quantity}}" data-dtype="Number">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <h2>{{localize "nepheshria.item.description"}}:</h2>
     <textarea name="description">{{item.description}}</textarea>
 </form>

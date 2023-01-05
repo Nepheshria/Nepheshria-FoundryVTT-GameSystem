@@ -1,24 +1,65 @@
 {
-  "NEPHESHRIA.AbilityStr": "Strength",
-  "NEPHESHRIA.AbilityDex": "Dexterity",
-  "NEPHESHRIA.AbilityCon": "Constitution",
-  "NEPHESHRIA.AbilitySoc": "Social",
-  "NEPHESHRIA.AbilityInst": "Instinct",
-  "NEPHESHRIA.AbilityMag": "Magic",
-  "NEPHESHRIA.AbilityInt": "Intelligence",
+  "nepheshria": {
+    "ability": {
+      "str": "Strengh",
+      "dex": "Dexterity",
+      "con": "Constitution",
+      "soc": "Social",
+      "inst": "Instinct",
+      "mag": "Magic",
+      "int": "Intelligence"
+    },
+    "abilityAbbr": {
+      "str": "str",
+      "dex": "dex",
+      "con": "con",
+      "soc": "soc",
+      "inst": "inst",
+      "mag": "mag",
+      "int": "int"
 
-  "NEPHESHRIA.AbilityStrAbbr": "str",
-  "NEPHESHRIA.AbilityDexAbbr": "dex",
-  "NEPHESHRIA.AbilityConAbbr": "con",
-  "NEPHESHRIA.AbilitySocAbbr": "soc",
-  "NEPHESHRIA.AbilityInstAbbr": "inst",
-  "NEPHESHRIA.AbilityMagAbbr": "mag",
-  "NEPHESHRIA.AbilityIntAbbr": "int",
-
-  "NEPHESHRIA.EffectCreate": "Create Effect",
-  "NEPHESHRIA.EffectToggle": "Toggle Effect",
-  "NEPHESHRIA.EffectEdit": "Edit Effect",
-  "NEPHESHRIA.EffectDelete": "Delete Effect",
-
-  "NEPHESHRIA.Add": "Add"
+    },
+    "damageType": {
+      "acid": "Acid",
+      "bludgeoning": "Bludgeoning",
+      "cold": "Cold",
+      "fire": "Fire",
+      "force": "Force",
+      "lightning": "Lightning",
+      "necrotic": "Necrotic",
+      "piercing": "Piercing",
+      "poison": "Poison",
+      "psychic": "Psychic",
+      "slashing": "Slashing",
+      "soul": "Soul"
+    },
+    "item": {
+      "description": "Description",
+      "quantity": "Quantity",
+      "weight": "Weight",
+      "value": "Value",
+      "requirement": "Requirement",
+      "ability": "Ability",
+      "damage": "Damage",
+      "damageType": "Damage Type",
+      "armor": "Armor",
+      "armorType": "Armor Type",
+      "reusable": "Reusable",
+      "effect": "Effect",
+      "bonus" : "Bonus",
+      "level" : "Level",
+      "progress" : "Progress",
+      "itemInfo": "Item Information"
+    },
+    "itemType": {
+      "types": {
+        "weapon": "Weapon",
+        "equipment" : "Equipment",
+        "consumable" : "Consumable",
+        "skill" : "Skill",
+        "mastery": "Mastery",
+        "spell" : "Spell"
+      }
+    }
+  }
 }

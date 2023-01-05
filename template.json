@@ -58,7 +58,7 @@
     }
   },
   "Item": {
-    "types": ["weapon", "equipment", "consumable", "skill", "mastery", "spell", "feature"],
+    "types": ["weapon", "equipment", "consumable", "skill", "mastery", "spell"],
     "templates": {
       "base": {
         "description": ""
@@ -84,6 +84,15 @@
     },
     "weapon": {
       "templates": ["item", "requirement"],
+      "ability": [
+        "Strength",
+        "Dexterity",
+        "Constitution",
+        "Social",
+        "Instinct",
+        "Magic",
+        "Intelligence"
+      ],
       "damage": {
         "type": "",
         "formula": ""
