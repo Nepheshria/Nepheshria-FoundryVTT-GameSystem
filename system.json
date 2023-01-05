@@ -12,10 +12,10 @@
     }
   ],
   "esmodules": [
-    "./module/nepheshria.js"
+    "module/nepheshria.mjs"
   ],
   "styles": [
-    "./css/nepheshria.css"
+    "css/nepheshria.css"
   ],
   "scripts": [],
   "packs": [],

@@ -1,6 +1,6 @@
-import NepheshriaItemSheet from "./sheets/nepheshriaItemSheets.js";
+import NepheshriaItemSheet from "./sheets/nepheshriaItemSheets.mjs";
 
-Hooks.once("init", function () {
+Hooks.once("init", async function () {
     console.log("nepheshria | Initialising Nepheshria System");
 
     Items.unregisterSheet("core", ItemSheet);

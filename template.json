@@ -66,51 +66,80 @@
       "item": {
         "templates": ["base"],
         "quantity": 1,
-        "weight": 0
+        "weight": 0,
+        "value": {
+          "number": 1,
+          "unit": "crystal"
+        }
+      },
+      "requirement": {
+        "Strength": 0,
+        "Dexterity": 0,
+        "Constitution": 0,
+        "Social": 0,
+        "Instinct": 0,
+        "Magic": 0,
+        "Intelligence": 0
       }
     },
-    "equipment": {
-      "templates": ["base", "item"],
+    "weapon": {
+      "templates": ["item", "requirement"],
       "damage": {
         "type": "",
         "formula": ""
       }
     },
+    "equipment": {
+      "templates": ["item","requirement"],
+      "armor": {
+        "value": 0,
+        "type": ""
+      }
+    },
     "consumable": {
-      "templates": ["base", "item"],
-      "damage": {
-        "type": "",
+      "templates": ["item"],
+      "reusable": false,
+      "effect": {
+        "description": "",
+        "number": 1,
         "formula": ""
       }
     },
     "skill": {
-      "templates": ["base", "item"],
-      "damage": {
-        "type": "",
-        "formula": ""
-      }
+      "templates": ["base"],
+      "ability": [
+        "Strength",
+        "Dexterity",
+        "Constitution",
+        "Social",
+        "Instinct",
+        "Magic",
+        "Intelligence"
+      ],
+      "bonus" : 5
     },
     "mastery": {
-      "templates": ["base", "item"],
-      "damage": {
-        "type": "",
-        "formula": ""
+      "templates": ["base"],
+      "level": {
+        "number": 1,
+        "progress" : 0
       }
     },
     "spell": {
-      "templates": ["base", "item"],
+      "templates": ["base"],
       "damage": {
         "type": "",
         "formula": ""
-      }
-    },
-    "feature": {
-      "templates": ["base", "item"],
-      "damage": {
-        "type": "",
-        "formula": ""
-      }
+      },
+      "ability": [
+        "Strength",
+        "Dexterity",
+        "Constitution",
+        "Social",
+        "Instinct",
+        "Magic",
+        "Intelligence"
+      ]
     }
-
   }
 }
