@@ -1,13 +1,13 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
-        <h1><input name="weapon.name" type="text" value="{{item.name}}" placeholder="Name"></h1>
+        <h1><input name="item.name" type="text" value="{{item.name}}" placeholder="Name"></h1>
     </header>
 
     {{!-- Sheet Tab Navigation --}}
     <nav class="sheet-tabs tabs" data-group="primary">
-        <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description}}</a>
-        <a class="item" data-tab="attributes">{{localize "NEPHESHRIA.item.attributes}}</a>
+        <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description"}}</a>
+        <a class="item" data-tab="attributes">{{localize "NEPHESHRIA.item.attributes"}}</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -23,11 +23,6 @@
             {{!-- As you add new fields, add them in here! --}}
             <div class="resource">
                 <table>
-                    <thead>
-                    <tr>
-                        <h2>{{localize "NEPHESHRIA.item.itemInfo"}}:</h2>
-                    </tr>
-                    </thead>
                     <tbody>
                     <tr>
                         <td>
@@ -48,7 +43,7 @@
                             <label for="weapon.damage">{{localize "NEPHESHRIA.item.damage"}}</label>
                         </td>
                         <td>
-                            <input id="weapon.damage" name="weapon.damage" type="text" value="{{item.damage}}" data-dtype="Number">
+                            <input id="weapon.damage" name="system.damage.formula" type="text" value="{{system.damage.formula}}" data-dtype="String"/>
                         </td>
                     </tr>
                     <tr>
@@ -56,34 +51,39 @@
                             <label for="weapon.requirement">{{localize "NEPHESHRIA.item.requirement"}}</label>
                         </td>
                         <td>
-                            <input id="weapon.requirement" name="weapon.requirement" type="number" value="{{item.requirement}}" data-dtype="Number">
-                        </td>
-                    </tr>
-                    <tr>
-
-                        <td>
-                            <label for="weapon.value.number">{{localize "NEPHESHRIA.item.value"}}</label>
-                            <label for="weapon.value.unit"></label>
-                        </td>
-                        <td>
-                            <input id="weapon.value.number" name="weapon.value.number" type="number" value="{{item.value.number}}" data-dtype="Number">
-                            <input id="weapon.value.unit" name="weapon.value.unit" type="text" value="{{item.value.unit}}" data-dtype="String">
+                            <input id="weapon.requirement" name="weapon.requirement" type="number" value="{{system.requirement}}" data-dtype="Number">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="weapon.weight">{{localize "NEPHESHRIA.item.weight"}}</label>
+                            <label for="system.item.value.number">{{localize "NEPHESHRIA.item.value"}}</label>
+                            <label for="system.item.value.unit"></label>
                         </td>
                         <td>
-                            <input id="weapon.weight" name="weapon.weight" type="number" value="{{item.weight}}" data-dtype="Number">Kg
+                            <input id="system.item.value.number" name="system.item.value.number" type="number" value="{{system.item.value.number}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <input id="system.item.value.unit" name="system.item.value.unit" type="text" value="{{system.item.value.unit}}" data-dtype="String">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="weapon.quantity">{{localize "NEPHESHRIA.item.quantity"}}</label>
+                            <label for="system.item.weight.number">{{localize "NEPHESHRIA.item.weight"}}</label>
+                            <label for="system.item.weight.unit"></label>
                         </td>
                         <td>
-                            <input id="weapon.quantity" name="weapon.quantity" type="number" value="{{item.quantity}}" data-dtype="Number">
+                            <input id="system.item.weight.number" name="system.item.weight.number" type="number" value="{{system.item.weight.number}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <input id="system.item.weight.unit" name="system.item.weight.unit" type="text" value="{{system.item.weight.unit}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="system.item.quantity">{{localize "NEPHESHRIA.item.quantity"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.quantity" name="system.item.quantity" type="number" value="{{system.item.quantity}}" data-dtype="number">
                         </td>
                     </tr>
                     </tbody>

@@ -11,7 +11,7 @@ import { NEPHESHRIA } from "./helpers/config.mjs";
 /*  Init Hook                                   */
 /* -------------------------------------------- */
 Hooks.once('init', async function () {
-    console.log("nepheshria | Initialising Nepheshria System");
+    console.log("Nepheshria  | Initialising Nepheshria System");
 
     // Add utility classes to the global game object so that they're more easily
     // accessible in global contexts.
