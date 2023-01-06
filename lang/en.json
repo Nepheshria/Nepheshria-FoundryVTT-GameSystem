@@ -1,5 +1,5 @@
 {
-  "nepheshria": {
+  "NEPHESHRIA": {
     "ability": {
       "str": "Strengh",
       "dex": "Dexterity",
@@ -17,7 +17,6 @@
       "inst": "inst",
       "mag": "mag",
       "int": "int"
-
     },
     "damageType": {
       "acid": "Acid",
@@ -35,6 +34,7 @@
     },
     "item": {
       "description": "Description",
+      "attributes": "Attributes",
       "quantity": "Quantity",
       "weight": "Weight",
       "value": "Value",

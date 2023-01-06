@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Nepheshria-FoundryVTT-GameSystem.iml" filepath="$PROJECT_DIR$/.idea/Nepheshria-FoundryVTT-GameSystem.iml" />
+      <module fileurl="file://D:/programme/Foundry Virtual Tabletop/resources/app/.idea/app.iml" filepath="D:/programme/Foundry Virtual Tabletop/resources/app/.idea/app.iml" />
     </modules>
   </component>
 </project>
