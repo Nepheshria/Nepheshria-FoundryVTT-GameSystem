@@ -1,5 +1,10 @@
 {
   "NEPHESHRIA": {
+    "word": {
+      "body": "Body",
+      "soul": "Soul",
+      "used": "used"
+    },
     "ability": {
       "str": "Strengh",
       "dex": "Dexterity",

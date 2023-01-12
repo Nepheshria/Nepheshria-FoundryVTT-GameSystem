@@ -4,12 +4,17 @@
  * @return {Promise}
  */
  export const preloadHandlebarsTemplates = async function() {
-  return loadTemplates([
+    return loadTemplates([
 
-    // Actor partials.
-    "systems/nepheshria/templates/actor/parts/actor-features.html",
-    "systems/nepheshria/templates/actor/parts/actor-items.html",
-    "systems/nepheshria/templates/actor/parts/actor-spells.html",
-    "systems/nepheshria/templates/actor/parts/actor-effects.html",
+        // Actor partials.
+        "systems/nepheshria/templates/actor/parts/actor-features.html",
+        "systems/nepheshria/templates/actor/parts/actor-items.html",
+        "systems/nepheshria/templates/actor/parts/actor-spells.html",
+        "systems/nepheshria/templates/actor/parts/actor-effects.html",
+
+        // Item partials
+        "systems/nepheshria/templates/item/parts/item-requirements.html"
+
+
   ]);
 };

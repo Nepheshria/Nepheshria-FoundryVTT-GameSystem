@@ -18,7 +18,6 @@ export class NepheshriaItem extends Item {
      * @private
      */
     getRollData() {
-
         return rollData;
     }
 
@@ -28,6 +27,5 @@ export class NepheshriaItem extends Item {
      * @private
      */
     async roll() {
-
     }
 }

@@ -1,6 +1,6 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
-        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
+        <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" alt="image-picture">
         <h1><input name="item.name" type="text" value="{{item.name}}" placeholder="Name"></h1>
     </header>
 
@@ -8,6 +8,7 @@
     <nav class="sheet-tabs tabs" data-group="primary">
         <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description"}}</a>
         <a class="item" data-tab="attributes">{{localize "NEPHESHRIA.item.attributes"}}</a>
+        <a class="item" data-tab="requirements">{{localize "NEPHESHRIA.item.requirement"}}</a>
     </nav>
 
     {{!-- Sheet Body --}}
@@ -20,19 +21,19 @@
 
         {{!-- Attributes Tab --}}
         <div class="tab attributes" data-group="primary" data-tab="attributes">
-            {{!-- As you add new fields, add them in here! --}}
+
             <div class="resource">
                 <table>
                     <tbody>
                     <tr>
                         <td>
-                            <label for="weapon.ability">{{localize "NEPHESHRIA.item.ability"}}</label>
+                            <label for="system.item.ability">{{localize "NEPHESHRIA.item.ability"}} {{localize "NEPHESHRIA.word.used"}}:</label>
                         </td>
                         <td>
-                            <select id="weapon.ability" name="weapon.ability">
-                                {{#select item.ability}}
+                            <select id="system.item.ability" name="system.item.ability">
+                                {{#select system.item.ability}}
                                 {{#each config.ability as |name ability|}}
-                                <option value="{{ability}}">{{name}}</option>
+                                <option value="{{system.item.ability}}">{{localize name}}</option>
                                 {{/each}}
                                 {{/select}}
                             </select>
@@ -40,18 +41,19 @@
                     </tr>
                     <tr>
                         <td>
-                            <label for="weapon.damage">{{localize "NEPHESHRIA.item.damage"}}</label>
+                            <label for="system.damage.formula">{{localize "NEPHESHRIA.item.damage"}}</label>
                         </td>
                         <td>
-                            <input id="weapon.damage" name="system.damage.formula" type="text" value="{{system.damage.formula}}" data-dtype="String"/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="weapon.requirement">{{localize "NEPHESHRIA.item.requirement"}}</label>
+                            <input id="system.damage.formula" name="system.damage.formula" type="text" value="{{system.damage.formula}}" data-dtype="String"/>
                         </td>
                         <td>
-                            <input id="weapon.requirement" name="weapon.requirement" type="number" value="{{system.requirement}}" data-dtype="Number">
+                            <select id="system.item.damage.type" name="system.item.damage.type">
+                                {{#select system.item.damage.type}}
+                                {{#each config.damageTypes as |name damageType|}}
+                                <option value="{{system.item.damage.type}}">{{localize name}}</option>
+                                {{/each}}
+                                {{/select}}
+                            </select>
                         </td>
                     </tr>
                     <tr>
@@ -88,6 +90,14 @@
                     </tr>
                     </tbody>
                 </table>
+                <br>
+
+            </div>
+        </div>
+
+        {{!-- Requirements Tab --}}
+        <div class="tab requirements" data-group="primary" data-tab="requirements">
+            {{> "systems/nepheshria/templates/item/parts/item-requirements.html"}}
             </div>
         </div>
     </section>

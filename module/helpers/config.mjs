@@ -4,20 +4,25 @@ export const NEPHESHRIA = {};
  * The set of Damage Types used within the system.
  * @type {Object}
  */
-NEPHESHRIA.attackTypes = {
-    acid: "NEPHESHRIA.attackType.acid",
-    bludgeoning: "nepheshria.attackType.bludgeoning",
-    cold: "NEPHESHRIA.attackType.cold",
-    fire: "NEPHESHRIA.attackType.fire",
-    force: "NEPHESHRIA.attackType.force",
-    lightning: "NEPHESHRIA.attackType.lightning",
-    necrotic: "NEPHESHRIA.attackType.necrotic",
-    piercing: "NEPHESHRIA.attackType.piercing",
-    poison: "NEPHESHRIA.attackType.poison",
-    psychic: "NEPHESHRIA.attackType.psychic",
-    slashing: "NEPHESHRIA.attackType.slashing",
-    soul: "NEPHESHRIA.attackType.soul"
+NEPHESHRIA.damageTypes = {
+    acid: "NEPHESHRIA.damageType.acid",
+    bludgeoning: "NEPHESHRIA.damageType.bludgeoning",
+    cold: "NEPHESHRIA.damageType.cold",
+    fire: "NEPHESHRIA.damageType.fire",
+    force: "NEPHESHRIA.damageType.force",
+    lightning: "NEPHESHRIA.damageType.lightning",
+    necrotic: "NEPHESHRIA.damageType.necrotic",
+    piercing: "NEPHESHRIA.damageType.piercing",
+    poison: "NEPHESHRIA.damageType.poison",
+    psychic: "NEPHESHRIA.damageType.psychic",
+    slashing: "NEPHESHRIA.damageType.slashing",
+    soul: "NEPHESHRIA.damageType.soul"
 }
+/**
+ * Number of existing damage type.
+ * @type {Number}
+ */
+NEPHESHRIA.nbrDamageType = 12
 
 /**
  * The set of Ability Scores used within the system.

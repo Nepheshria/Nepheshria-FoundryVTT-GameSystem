@@ -79,7 +79,6 @@
         "Strength": 0,
         "Dexterity": 0,
         "Constitution": 0,
-        "Social": 0,
         "Instinct": 0,
         "Magic": 0,
         "Intelligence": 0
@@ -87,15 +86,7 @@
     },
     "weapon": {
       "templates": ["item", "requirement"],
-      "ability": [
-        "Strength",
-        "Dexterity",
-        "Constitution",
-        "Social",
-        "Instinct",
-        "Magic",
-        "Intelligence"
-      ],
+      "ability": "",
       "damage": {
         "type": "",
         "formula": ""
@@ -104,8 +95,18 @@
     "equipment": {
       "templates": ["item","requirement"],
       "armor": {
-        "value": 0,
-        "type": ""
+        "acid": 0,
+        "bludgeoning": 0,
+        "cold": 0,
+        "fire": 0,
+        "force": 0,
+        "lightning": 0,
+        "necrotic": 0,
+        "piercing": 0,
+        "poison": 0,
+        "psychic": 0,
+        "slashing": 0,
+        "soul": 0
       }
     },
     "consumable": {

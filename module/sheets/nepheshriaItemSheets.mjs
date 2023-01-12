@@ -30,15 +30,12 @@ export class NepheshriaItemSheet extends ItemSheet {
 
         // Retrieve the roll data for TinyMCE editors.
         data.rollData = {};
-        let actor = this.object?.parent ?? null;
-        if (actor) {
-            data.rollData = actor.getRollData();
-        }
+
 
         // Add the actor's data to context.data for easier access, as well as flags.
         data.system = dataClone.system;
         data.flags = dataClone.flags;
-
+        data.config = CONFIG.NEPHESHRIA;
         return data;
     }
 
