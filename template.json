@@ -53,8 +53,7 @@
       ]
     },
     "npc": {
-      "templates": ["base", "abilities"],
-      "cr": 0
+      "templates": ["base", "abilities"]
     }
   },
   "Item": {
@@ -120,15 +119,7 @@
     },
     "skill": {
       "templates": ["base"],
-      "ability": [
-        "Strength",
-        "Dexterity",
-        "Constitution",
-        "Social",
-        "Instinct",
-        "Magic",
-        "Intelligence"
-      ],
+      "ability": "",
       "bonus" : 5
     },
     "mastery": {
@@ -144,15 +135,7 @@
         "type": "",
         "formula": ""
       },
-      "ability": [
-        "Strength",
-        "Dexterity",
-        "Constitution",
-        "Social",
-        "Instinct",
-        "Magic",
-        "Intelligence"
-      ]
+      "ability": ""
     }
   }
 }
