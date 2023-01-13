@@ -2,8 +2,75 @@
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name" style="width: available"></h1>
-        <h1><input name="level" type="number" value="{{item.leve}}" step="1" min="1" max="9" style="text-align: center; width: min-content" placeholder="0"></h1>
     </header>
-    <h2>Description: </h2>
-    <textarea name="description">{{item.description}}</textarea>
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description"}}</a>
+        <a class="item" data-tab="attributes">{{localize "NEPHESHRIA.item.attributes"}}</a>
+    </nav>
+
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
+            {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+
+            <div class="resource">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label for="system.item.level.number">{{localize "NEPHESHRIA.item.level"}}:</label>
+                            </td>
+                            <td>
+                                <input id="system.item.level.number" name="system.item.level.number" type="number" min="0" max="9" step="1" value="{{system.item.level.number}}" data-dtype="Number">
+                            </td>
+                            <td>
+                                <input id="system.item.level.progress" name="system.item.level.progress" style="text-align: center; width: min-content" type="number" min="0" max="100" step="1" value="{{system.item.level.progress}}" data-dtype="Number">
+                                %
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="system.damage.formula">{{localize "NEPHESHRIA.item.damage"}}</label>
+                            </td>
+                            <td>
+                                <input id="system.damage.formula" name="system.damage.formula" type="text" value="{{system.damage.formula}}" data-dtype="String"/>
+                            </td>
+                            <td>
+                                <select id="system.item.damage.type" name="system.item.damage.type">
+                                    {{#select system.item.damage.type}}
+                                    {{#each config.damageTypes as |name damageType|}}
+                                    <option value="{{system.item.damage.type}}">{{localize name}}</option>
+                                    {{/each}}
+                                    {{/select}}
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="system.item.ability">{{localize "NEPHESHRIA.item.ability"}} {{localize "NEPHESHRIA.word.used"}}:</label>
+                            </td>
+                            <td>
+                                <select id="system.item.ability" name="system.item.ability">
+                                    {{#select system.item.ability}}
+                                    {{#each config.ability as |name ability|}}
+                                    <option value="{{ability}}">{{localize name}}</option>
+                                    {{/each}}
+                                    {{/select}}
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+    </section>
 </form>

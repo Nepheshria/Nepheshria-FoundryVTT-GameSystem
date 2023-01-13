@@ -64,12 +64,9 @@ Handlebars.registerHelper('concat', function() {
     return outStr;
 });
 
-Handlebars.registerHelper('toLowerCase', function(str) {
-    return str.toLowerCase();
-});
-
-Handlebars.registerHelper('combine', function (str, str2) {
-    return str + str2
+Handlebars.registerHelper('toLowerCase', function(value, options) {
+    // Helper parameters
+    var d1
 });
 
 /* -------------------------------------------- */

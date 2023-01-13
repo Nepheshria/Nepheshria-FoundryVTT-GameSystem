@@ -4,8 +4,8 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"></h1>
         <div>
             <h2>Level</h2>
-            <h3><input name="level" type="number" style="text-align: center" value="{{item.level.number}}" min="0" max="9" step="1" placeholder="1"></h3>
-            <input name="progress" type="number" style="text-align: center" value="{{item.level.progress}}%" min="0" max="100" step="1" placeholder="0%">
+            <h3><input name="level" type="number" style="text-align: center" value="{{system.item.level.number}}" min="0" max="9" step="1" placeholder="1"></h3>
+            <input name="progress" type="number" style="text-align: center" value="{{system.item.level.progress}}" min="0" max="100" step="1" placeholder="0">
         </div>
     </header>
 
@@ -45,7 +45,7 @@
                                 <label for="system.item.effect.{{name}}">{{localize level}}</label>
                             </td>
                             <td>
-                                <input id="system.item.effect.{{name}}" name="system.item.effect.{{name}}" type="text" value="{{name}}" data-dtype="String">
+                                <input id="system.item.effect.{{name}}" name="system.item.effect.{{name}}" type="text" value="{{system.item.effect}}" data-dtype="String">
                             </td>
                         </tr>
                     {{/each}}

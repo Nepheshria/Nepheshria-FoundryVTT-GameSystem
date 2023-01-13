@@ -145,7 +145,11 @@
         "type": "",
         "formula": ""
       },
-      "ability": ""
+      "ability": "",
+      "level": {
+        "number": 1,
+        "progress": 0
+      }
     }
   }
 }
