@@ -33,7 +33,7 @@
                             <select id="system.item.ability" name="system.item.ability">
                                 {{#select system.item.ability}}
                                 {{#each config.ability as |name ability|}}
-                                <option value="{{system.item.ability}}">{{localize name}}</option>
+                                <option value="{{ability}}">{{localize name}}</option>
                                 {{/each}}
                                 {{/select}}
                             </select>

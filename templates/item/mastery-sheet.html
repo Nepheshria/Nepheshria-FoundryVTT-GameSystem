@@ -8,7 +8,52 @@
             <input name="progress" type="number" style="text-align: center" value="{{item.level.progress}}%" min="0" max="100" step="1" placeholder="0%">
         </div>
     </header>
-    <br>
-    <h2>Description: </h2>
-    <textarea name="description">{{item.description}}</textarea>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description"}}</a>
+        <a class="item" data-tab="effects">{{localize "NEPHESHRIA.word.effect"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
+            {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Effects Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="effects">
+
+            <div class="resource">
+                <table>
+                    <thead>
+                        <tr class="align-center">
+                            <td>
+                                Level
+                            </td>
+                            <td>
+                                Effect
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {{#each config.level as |level name|}}
+                        <tr>
+                            <td class="align-center">
+                                <label for="system.item.effect.{{name}}">{{localize level}}</label>
+                            </td>
+                            <td>
+                                <input id="system.item.effect.{{name}}" name="system.item.effect.{{name}}" type="text" value="{{name}}" data-dtype="String">
+                            </td>
+                        </tr>
+                    {{/each}}
+                    </tbody>
+                </table>
+                <br>
+
+            </div>
+        </div>
+    </section>
 </form>

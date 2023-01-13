@@ -1,20 +1,56 @@
 <form class="{{cssClass}}" autocomplete="off">
     <header class="sheet-header">
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
-        <div>
-            <h2>Name:</h2>
-            <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"></h1>
-        </div>
-        <div>
-            <h2>Bonus</h2>
-            <h3><input name="bonus" type="number" value="{{item.bonus}}" placeholder="5"></h3>
-            <h3>
-                <input name="ability" type="text" value="{{item.ability}}" placeholder="">
-            </h3>
+        <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"></h1>
+    </header>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description"}}</a>
+        <a class="item" data-tab="attributes">{{localize "NEPHESHRIA.item.attributes"}}</a>
+    </nav>
+
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
+            {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
         </div>
 
-    </header>
-    <br>
-    <h2>Description: </h2>
-    <textarea name="description">{{item.description}}</textarea>
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+
+            <div class="resource">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <label>{{localize "NEPHESHRIA.item.bonus"}}:</label>
+                            </td>
+                            <td>
+                                <input id="system.item.bonus" name="system.item.bonus" type="number" min="0" step="5" value="{{system.item.bonus}}" data-dtype="Number">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="system.item.ability">{{localize "NEPHESHRIA.item.ability"}} {{localize "NEPHESHRIA.word.used"}}:</label>
+                            </td>
+                            <td>
+                                <select id="system.item.ability" name="system.item.ability">
+                                    {{#select system.item.ability}}
+                                    {{#each config.ability as |name ability|}}
+                                    <option value="{{ability}}">{{localize name}}</option>
+                                    {{/each}}
+                                    {{/select}}
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br>
+            </div>
+        </div>
+    </section>
 </form>

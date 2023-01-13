@@ -31,10 +31,10 @@
                         </td>
                         <td colspan="2">
                             <table class="align-center">
-                                {{#each config.damageTypes as |value name|}}
+                                {{#each config.damageTypes as |name value|}}
                                 <tr>
                                     <td>
-                                        <input id="system.item.armor.{{name}}" name="system.item.armor.{{name}}" type="number" value="{{value}}" data-dtype="Number">
+                                        <input id="system.item.armor.{{name}}" name="system.item.armor.{{name}}" type="number" value="system.item.armor.{{value}}" data-dtype="Number">
                                     </td>
                                     <td>
                                         <label for="system.item.armor.{{name}}">{{localize name}}</label>

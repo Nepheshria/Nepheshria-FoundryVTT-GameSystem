@@ -68,6 +68,10 @@ Handlebars.registerHelper('toLowerCase', function(str) {
     return str.toLowerCase();
 });
 
+Handlebars.registerHelper('combine', function (str, str2) {
+    return str + str2
+});
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */

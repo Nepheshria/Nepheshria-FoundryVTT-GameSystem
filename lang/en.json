@@ -5,7 +5,8 @@
       "soul": "Soul",
       "used": "used",
       "true": "True",
-      "false": "False"
+      "false": "False",
+      "effect": "Effect"
     },
     "ability": {
       "str": "Strengh",
@@ -67,6 +68,16 @@
         "mastery": "Mastery",
         "spell" : "Spell"
       }
+    },
+    "level": {
+      "insider": "Insider",
+      "adept": "Adept",
+      "confirmed": "Confirmed",
+      "master": "Master",
+      "grandMaster": "Grand Master",
+      "prodigy": "Prodigy",
+      "god": "God",
+      "transcendent": "Transcendent"
     }
   }
 }

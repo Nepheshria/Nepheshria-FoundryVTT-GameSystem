@@ -17,7 +17,7 @@ NEPHESHRIA.damageTypes = {
     psychic: "NEPHESHRIA.damageType.psychic",
     slashing: "NEPHESHRIA.damageType.slashing",
     soul: "NEPHESHRIA.damageType.soul"
-}
+};
 /**
  * Number of existing damage type.
  * @type {Number}
@@ -36,7 +36,7 @@ NEPHESHRIA.ability = {
     inst: "NEPHESHRIA.ability.inst",
     mag: "NEPHESHRIA.ability.mag",
     int: "NEPHESHRIA.ability.int",
-}
+};
 
 NEPHESHRIA.abilityAbbreviations = {
     str: "NEPHESHRIA.abilityAbbr.str",
@@ -46,4 +46,19 @@ NEPHESHRIA.abilityAbbreviations = {
     inst: "NEPHESHRIA.abilityAbbr.inst",
     mag: "NEPHESHRIA.abilityAbbr.mag",
     int: "NEPHESHRIA.abilityAbbr.int",
+};
+
+/**
+ * The differents level
+ * @type {Object}
+ */
+NEPHESHRIA.level = {
+    insider: "NEPHESHRIA.level.insider",
+    adept: "NEPHESHRIA.level.adept",
+    confirmed: "NEPHESHRIA.level.confirmed",
+    master: "NEPHESHRIA.level.master",
+    grandMaster: "NEPHESHRIA.level.grandMaster",
+    prodigy: "NEPHESHRIA.level.prodigy",
+    god: "NEPHESHRIA.level.god",
+    transcendent: "NEPHESHRIA.level.transcendent"
 };

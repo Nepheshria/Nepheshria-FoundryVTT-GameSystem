@@ -127,6 +127,16 @@
       "level": {
         "number": 1,
         "progress" : 0
+      },
+      "effect": {
+        "insider": "",
+        "adept": "",
+        "confirmed": "",
+        "master": "",
+        "grand Master": "",
+        "prodigy": "",
+        "god": "",
+        "transcendent": ""
       }
     },
     "spell": {
