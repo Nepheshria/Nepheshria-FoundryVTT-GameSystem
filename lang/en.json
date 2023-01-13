@@ -3,7 +3,9 @@
     "word": {
       "body": "Body",
       "soul": "Soul",
-      "used": "used"
+      "used": "used",
+      "true": "True",
+      "false": "False"
     },
     "ability": {
       "str": "Strengh",

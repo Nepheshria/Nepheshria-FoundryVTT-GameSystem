@@ -3,5 +3,78 @@
         <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64">
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"></h1>
     </header>
-    <p>Consumable</p>
+
+    {{!-- Sheet Tab Navigation --}}
+    <nav class="sheet-tabs tabs" data-group="primary">
+        <a class="item" data-tab="description">{{localize "NEPHESHRIA.item.description"}}</a>
+        <a class="item" data-tab="attributes">{{localize "NEPHESHRIA.item.attributes"}}</a>
+        <a class="item" data-tab="requirements">{{localize "NEPHESHRIA.item.requirement"}}</a>
+    </nav>
+
+    {{!-- Sheet Body --}}
+    <section class="sheet-body">
+        {{!-- Description Tab --}}
+        <div class="tab" data-group="primary" data-tab="description">
+            {{!-- To render inline rolls in a TinyMCE editor, you need to pass the parent actor's (if any) roll data to the rollData prop. --}}
+            {{editor system.description target="system.description" rollData=rollData button=true owner=owner editable=editable}}
+        </div>
+
+        {{!-- Attributes Tab --}}
+        <div class="tab attributes" data-group="primary" data-tab="attributes">
+
+            <div class="resource">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <label for="system.item.reusable">{{localize "NEPHESHRIA.item.reusable"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.reusable" name="system.item.reusable" type="checkbox" {{checked system.item.reusable}}>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="system.item.value.number">{{localize "NEPHESHRIA.item.value"}}</label>
+                            <label for="system.item.value.unit"></label>
+                        </td>
+                        <td>
+                            <input id="system.item.value.number" name="system.item.value.number" type="number" value="{{system.item.value.number}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <input id="system.item.value.unit" name="system.item.value.unit" type="text" value="{{system.item.value.unit}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="system.item.weight.number">{{localize "NEPHESHRIA.item.weight"}}</label>
+                            <label for="system.item.weight.unit"></label>
+                        </td>
+                        <td>
+                            <input id="system.item.weight.number" name="system.item.weight.number" type="number" value="{{system.item.weight.number}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <input id="system.item.weight.unit" name="system.item.weight.unit" type="text" value="{{system.item.weight.unit}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="system.item.quantity">{{localize "NEPHESHRIA.item.quantity"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.quantity" name="system.item.quantity" type="number" value="{{system.item.quantity}}" data-dtype="number">
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br>
+
+            </div>
+        </div>
+
+        {{!-- Requirements Tab --}}
+        <div class="tab requirements" data-group="primary" data-tab="requirements">
+            {{> "systems/nepheshria/templates/item/parts/item-requirements.html"}}
+        </div>
+    </section>
 </form>
