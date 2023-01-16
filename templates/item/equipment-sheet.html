@@ -34,7 +34,7 @@
                                 {{#each config.damageTypes as |name damageType|}}
                                 <tr>
                                     <td>
-                                        <input id="system.item.armor.{{damageType}}" name="system.item.armor.{{damageType}}" type="number" value="{{system.item.armor.[damageType]}}" data-dtype="Number">
+                                        <input id="system.item.armor.{{damageType}}" name="system.item.armor.{{damageType}}" type="number" value="{{system.item.armor.damageType}}" data-dtype="Number">
                                     </td>
                                     <td>
                                         <label for="system.item.armor.{{damageType}}">{{localize name}}</label>

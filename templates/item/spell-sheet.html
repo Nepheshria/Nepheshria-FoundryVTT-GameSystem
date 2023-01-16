@@ -47,7 +47,7 @@
                                 <select id="system.item.damage.type" name="system.item.damage.type">
                                     {{#select system.item.damage.type}}
                                     {{#each config.damageTypes as |name damageType|}}
-                                    <option value="{{system.item.damage.type}}">{{localize name}}</option>
+                                    <option value="{{damageType}}">{{localize name}}</option>
                                     {{/each}}
                                     {{/select}}
                                 </select>
