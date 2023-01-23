@@ -69,6 +69,10 @@ Handlebars.registerHelper('toLowerCase', function(value, options) {
     var d1
 });
 
+Handlebars.registerHelper('eachConcat', function(base, end) {
+    return base+"{{"+end+"}}"
+})
+
 /* -------------------------------------------- */
 /*  Ready Hook                                  */
 /* -------------------------------------------- */

@@ -31,16 +31,120 @@
                         </td>
                         <td colspan="2">
                             <table class="align-center">
+                                {{!--
+                                <!--
                                 {{#each config.damageTypes as |name damageType|}}
                                 <tr>
                                     <td>
-                                        <input id="system.item.armor.{{damageType}}" name="system.item.armor.{{damageType}}" type="number" value="{{system.item.armor.damageType}}" data-dtype="Number">
+                                        <input id="system.item.armor.{{damageType}}" name="system.item.armor.{{damageType}}" type="number" value="{{{{eachConcat 'system.item.armor.' damageType}}}}" data-dtype="Number">
                                     </td>
                                     <td>
                                         <label for="system.item.armor.{{damageType}}">{{localize name}}</label>
                                     </td>
                                 </tr>
                                 {{/each}}
+                                {{#each system.item.armor as damageType}} {{damageTypes}}
+                                {{/each}}
+                                {{system.item.armor}}
+                                -->
+                                --}}
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.acid" name="system.item.armor.acid" type="number" value="{{system.item.armor.acid}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.acid">{{localize "NEPHESHRIA.damageType.acid"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.bludgeoning" name="system.item.armor.bludgeoning" type="number" value="{{system.item.armor.bludgeoning}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.bludgeoning">{{localize "NEPHESHRIA.damageType.bludgeoning"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.cold" name="system.item.armor.cold" type="number" value="{{system.item.armor.cold}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.cold">{{localize "NEPHESHRIA.damageType.cold"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.fire" name="system.item.armor.fire" type="number" value="{{system.item.armor.fire}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.fire">{{localize "NEPHESHRIA.damageType.fire"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.force" name="system.item.armor.force" type="number" value="{{system.item.armor.force}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.force">{{localize "NEPHESHRIA.damageType.force"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.lightning" name="system.item.armor.lightning" type="number" value="{{system.item.armor.lightning}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.lightning">{{localize "NEPHESHRIA.damageType.lightning"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.necrotic" name="system.item.armor.necrotic" type="number" value="{{system.item.armor.necrotic}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.necrotic">{{localize "NEPHESHRIA.damageType.necrotic"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.piercing" name="system.item.armor.piercing" type="number" value="{{system.item.armor.piercing}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.piercing">{{localize "NEPHESHRIA.damageType.piercing"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.poison" name="system.item.armor.poison" type="number" value="{{system.item.armor.poison}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.poison">{{localize "NEPHESHRIA.damageType.poison"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.psychic" name="system.item.armor.psychic" type="number" value="{{system.item.armor.psychic}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.psychic">{{localize "NEPHESHRIA.damageType.psychic"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.slashing" name="system.item.armor.slashing" type="number" value="{{system.item.armor.slashing}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.slashing">{{localize "NEPHESHRIA.damageType.slashing"}}</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input id="system.item.armor.soul" name="system.item.armor.soul" type="number" value="{{system.item.armor.soul}}" data-dtype="Number">
+                                    </td>
+                                    <td>
+                                        <label for="system.item.armor.soul">{{localize "NEPHESHRIA.damageType.soul"}}</label>
+                                    </td>
+                                </tr>
+
                             </table>
                         </td>
                     </tr>
