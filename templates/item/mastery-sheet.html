@@ -4,8 +4,8 @@
         <h1><input name="name" type="text" value="{{item.name}}" placeholder="Name"></h1>
         <div>
             <h2>Level</h2>
-            <h3><input name="level" type="number" style="text-align: center" value="{{system.item.level.number}}" min="0" max="9" step="1" placeholder="1"></h3>
-            <input name="progress" type="number" style="text-align: center" value="{{system.item.level.progress}}" min="0" max="100" step="1" placeholder="0">
+            <h3><input name="system.item.level.number" type="number" style="text-align: center" value="{{system.item.level.number}}" min="0" max="9" step="1" placeholder="1"></h3>
+            <input name="system.item.level.progress" type="number" style="text-align: center" value="{{system.item.level.progress}}" min="0" max="100" step="1" placeholder="0">
         </div>
     </header>
 
@@ -39,16 +39,90 @@
                         </tr>
                     </thead>
                     <tbody>
+                    <!--
+                    {{!--
                     {{#each config.level as |level name|}}
-                        <tr>
-                            <td class="align-center">
-                                <label for="system.item.effect.{{name}}">{{localize level}}</label>
-                            </td>
-                            <td>
-                                <input id="system.item.effect.{{name}}" name="system.item.effect.{{name}}" type="text" value="{{system.item.effect}}" data-dtype="String">
-                            </td>
-                        </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.{{name}}">{{localize level}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.{{name}}" name="system.item.effect.{{name}}" type="text" value="{{system.item.effect}}" data-dtype="String">
+                        </td>
+                    </tr>
                     {{/each}}
+                    --}}
+    confirmed: "NEPHESHRIA.level.confirmed",
+    master: "NEPHESHRIA.level.master",
+    grandMaster: "NEPHESHRIA.level.grandMaster",
+    prodigy: "NEPHESHRIA.level.prodigy",
+    god: "NEPHESHRIA.level.god",
+    transcendent: "NEPHESHRIA.level.transcendent"
+                    -->
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.insider">{{localize "NEPHESHRIA.level.insider"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.insider" name="system.item.effect.insider" type="text" value="{{system.item.effect.insider}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.adept">{{localize "NEPHESHRIA.level.adept"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.adept" name="system.item.effect.adept" type="text" value="{{system.item.effect.adept}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.confirmed">{{localize "NEPHESHRIA.level.confirmed"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.confirmed" name="system.item.effect.confirmed" type="text" value="{{system.item.effect.confirmed}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.master">{{localize "NEPHESHRIA.level.master"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.master" name="system.item.effect.master" type="text" value="{{system.item.effect.master}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.grandMaster">{{localize "NEPHESHRIA.level.grandMaster"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.grandMaster" name="system.item.effect.grandMaster" type="text" value="{{system.item.effect.grandMaster}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.prodigy">{{localize "NEPHESHRIA.level.prodigy"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.prodigy" name="system.item.effect.prodigy" type="text" value="{{system.item.effect.prodigy}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.god">{{localize "NEPHESHRIA.level.god"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.god" name="system.item.effect.god" type="text" value="{{system.item.effect.god}}" data-dtype="String">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="align-center">
+                            <label for="system.item.effect.transcendent">{{localize "NEPHESHRIA.level.transcendent"}}</label>
+                        </td>
+                        <td>
+                            <input id="system.item.effect.transcendent" name="system.item.effect.transcendent" type="text" value="{{system.item.effect.transcendent}}" data-dtype="String">
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <br>
