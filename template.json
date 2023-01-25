@@ -5,39 +5,36 @@
       "base": {
         "health": {
           "value": 10,
-          "min": -10,
           "max": 10
         },
         "energy": {
           "value": 5,
-          "min": 0,
           "max": 10
         },
-        "armor": 0,
+        "armor": {
+          "acid": 0,
+          "bludgeoning": 0,
+          "cold": 0,
+          "fire": 0,
+          "force": 0,
+          "lightning": 0,
+          "necrotic": 0,
+          "piercing": 0,
+          "poison": 0,
+          "psychic": 0,
+          "slashing": 0,
+          "soul": 0
+        },
         "biography": ""
       },
       "abilities": {
-        "Strength": {
-          "value": 50
-        },
-        "Dexterity": {
-          "value": 50
-        },
-        "Constitution": {
-          "value": 50
-        },
-        "Social": {
-          "value": 50
-        },
-        "Instinct": {
-          "value": 50
-        },
-        "Magic": {
-          "value": 50
-        },
-        "Intelligence": {
-          "value": 50
-        }
+        "str": 50,
+        "dex": 50,
+        "con": 50,
+        "soc": 50,
+        "inst": 50,
+        "mag": 50,
+        "int": 50
       }
     },
     "character": {

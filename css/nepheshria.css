@@ -366,7 +366,7 @@
     text-align: center;
     margin: 0 6px;
 }
-.nepheshria .items-list .item {
+.nepheshria .items-list .item .actor {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -376,10 +376,10 @@
 .nepheshria .items-list .item:last-child {
     border-bottom: none;
 }
-.nepheshria .items-list .item .item-name {
+.nepheshria .items-list .item .actor .item-name {
     color: #191813;
 }
-.nepheshria .items-list .item .item-name .item-image {
+.nepheshria .items-list .item .actor .item-name .item-image {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30px;
     flex: 0 0 30px;
@@ -419,15 +419,15 @@
     flex: 0 0 200px;
     padding: 0 8px;
 }
-.nepheshria .effects .item .effect-source,
-.nepheshria .effects .item .effect-duration,
-.nepheshria .effects .item .effect-controls {
+.nepheshria .effects .item .actor .effect-source,
+.nepheshria .effects .item .actor .effect-duration,
+.nepheshria .effects .item .actor .effect-controls {
     text-align: center;
     border-left: 1px solid #c9c7b8;
     border-right: 1px solid #c9c7b8;
     font-size: 12px;
 }
-.nepheshria .effects .item .effect-controls {
+.nepheshria .effects .item .actor .effect-controls {
     border: none;
 }
 

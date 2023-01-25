@@ -11,6 +11,7 @@
         "systems/nepheshria/templates/actor/parts/actor-items.html",
         "systems/nepheshria/templates/actor/parts/actor-spells.html",
         "systems/nepheshria/templates/actor/parts/actor-effects.html",
+        "systems/nepheshria/templates/actor/parts/actor-stats.html",
 
         // Item partials
         "systems/nepheshria/templates/item/parts/item-requirements.html"

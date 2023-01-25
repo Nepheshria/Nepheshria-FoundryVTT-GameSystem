@@ -3,10 +3,12 @@
     "word": {
       "body": "Body",
       "soul": "Soul",
+      "misc": "Misc",
       "used": "used",
       "true": "True",
       "false": "False",
-      "effect": "Effect"
+      "effect": "Effect",
+      "biography": "Biography"
     },
     "ability": {
       "str": "Strengh",

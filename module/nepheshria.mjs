@@ -3,6 +3,7 @@ import {NepheshriaActor} from "./documents/actor.mjs";
 import { NepheshriaItem } from "./documents/item.mjs";
 // Import sheet classes.
 import { NepheshriaItemSheet } from "./sheets/nepheshriaItemSheets.mjs";
+import {NepheshriaActorSheet} from "./sheets/nepheshriaActorSheets.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { NEPHESHRIA } from "./helpers/config.mjs";
@@ -17,8 +18,7 @@ Hooks.once('init', async function () {
     // accessible in global contexts.
     game.nepheshria = {
         NepheshriaActor,
-        NepheshriaItem,
-        rollItemMacro
+        NepheshriaItem
     };
 
     // Add custom constants for configuration.
@@ -39,6 +39,8 @@ Hooks.once('init', async function () {
 
     // Register sheet application classes
     // Actor
+    Actors.unregisterSheet("core", ActorSheet);
+    Actors.registerSheet("nepheshria", NepheshriaActorSheet, { makeDefault: true});
 
     // Item
     Items.unregisterSheet("core", ItemSheet);

@@ -1,0 +1,153 @@
+<div class="resource">
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <label>{{localize "NEPHESHRIA.item.armor"}}:</label>
+            </td>
+            <td colspan="2">
+                <table class="align-center">
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.acid" name="system.actor.armor.acid" type="number" value="{{system.actor.armor.acid}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.acid">{{localize "NEPHESHRIA.damageType.acid"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.bludgeoning" name="system.actor.armor.bludgeoning" type="number" value="{{system.actor.armor.bludgeoning}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.bludgeoning">{{localize "NEPHESHRIA.damageType.bludgeoning"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.cold" name="system.actor.armor.cold" type="number" value="{{system.actor.armor.cold}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.cold">{{localize "NEPHESHRIA.damageType.cold"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.fire" name="system.actor.armor.fire" type="number" value="{{system.actor.armor.fire}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.fire">{{localize "NEPHESHRIA.damageType.fire"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.force" name="system.actor.armor.force" type="number" value="{{system.actor.armor.force}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.force">{{localize "NEPHESHRIA.damageType.force"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.lightning" name="system.actor.armor.lightning" type="number" value="{{system.actor.armor.lightning}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.lightning">{{localize "NEPHESHRIA.damageType.lightning"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.necrotic" name="system.actor.armor.necrotic" type="number" value="{{system.actor.armor.necrotic}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.necrotic">{{localize "NEPHESHRIA.damageType.necrotic"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.piercing" name="system.actor.armor.piercing" type="number" value="{{system.actor.armor.piercing}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.piercing">{{localize "NEPHESHRIA.damageType.piercing"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.poison" name="system.actor.armor.poison" type="number" value="{{system.actor.armor.poison}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.poison">{{localize "NEPHESHRIA.damageType.poison"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.psychic" name="system.actor.armor.psychic" type="number" value="{{system.actor.armor.psychic}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.psychic">{{localize "NEPHESHRIA.damageType.psychic"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.slashing" name="system.actor.armor.slashing" type="number" value="{{system.actor.armor.slashing}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.slashing">{{localize "NEPHESHRIA.damageType.slashing"}}</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input id="system.actor.armor.soul" name="system.actor.armor.soul" type="number" value="{{system.actor.armor.soul}}" data-dtype="Number">
+                        </td>
+                        <td>
+                            <label for="system.actor.armor.soul">{{localize "NEPHESHRIA.damageType.soul"}}</label>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <div class="grid-container grid-3col">
+                <h3 style="text-align: center;">{{ localize  "NEPHESHRIA.word.body"}}</h3>
+                <h3 style="text-align: center">{{ localize  "NEPHESHRIA.word.misc"}}</h3>
+                <h3 style="text-align: center">{{ localize  "NEPHESHRIA.word.soul"}}</h3>
+
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.str"}}
+                    <input id="system.actor.str" name="system.actor.str" type="number" value="{{system.actor.str}}" data-dtype="Number">
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.inst"}}
+                    <input id="system.actor.inst" name="system.actor.inst" type="number" value="{{system.actor.inst}}" data-dtype="Number">
+                </div>
+
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.dex"}}
+                    <input id="system.actor.dex" name="system.actor.dex" type="number" value="{{system.actor.dex}}" data-dtype="Number">
+                </div>
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.soc"}}
+                    <input id="system.actor.soc" name="system.actor.soc" type="number" value="{{system.actor.soc}}" data-dtype="Number">
+                </div>
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.mag"}}
+                    <input id="system.actor.mag" name="system.actor.mag" type="number" value="{{system.actor.mag}}" data-dtype="Number">
+                </div>
+
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.con"}}
+                    <input id="system.actor.con" name="system.actor.con" type="number" value="{{system.actor.con}}" data-dtype="Number">
+                </div>
+                <div class="grid-item"></div>
+                <div class="grid-item">
+                    {{ localize  "NEPHESHRIA.ability.int"}}
+                    <input id="system.actor.int" name="system.actor.int" type="number" value="{{system.actor.int}}" data-dtype="Number">
+                </div>
+            </div>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+</div>
+
