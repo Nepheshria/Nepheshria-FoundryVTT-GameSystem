@@ -80,6 +80,12 @@
       "prodigy": "Prodigy",
       "god": "God",
       "transcendent": "Transcendent"
+    },
+    "sheet": {
+      "addSkill": "Add Skill",
+      "spellName": "Spell Name",
+      "spellLevel": "Spell Level",
+      "newItem": "New Item"
     }
   }
 }

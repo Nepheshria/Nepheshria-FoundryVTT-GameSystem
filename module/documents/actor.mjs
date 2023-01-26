@@ -103,4 +103,10 @@ export class NepheshriaActor extends Actor {
         // Process additional NPC data here.
     }
 
+
+    createOwnedItem(itemData) {
+        console.log("Nepheshria  | createOwnedItem");
+
+    }
+
 }

@@ -25,7 +25,8 @@
           "slashing": 0,
           "soul": 0
         },
-        "biography": ""
+        "biography": "",
+        "skills": []
       },
       "abilities": {
         "str": 50,
