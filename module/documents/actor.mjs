@@ -48,11 +48,6 @@ export class NepheshriaActor extends Actor {
         // Make modifications to data here. For example:
         const systemData = actorData.system;
 
-        // Loop through ability scores, and add their modifiers to our sheet output.
-        for (let [key, ability] of Object.entries(systemData.abilities)) {
-            // Calculate the modifier using d20 rules.
-            ability.mod = Math.floor((ability.value - 10) / 2);
-        }
     }
 
     /**
@@ -63,7 +58,6 @@ export class NepheshriaActor extends Actor {
 
         // Make modifications to data here. For example:
         const systemData = actorData.system;
-        systemData.xp = (systemData.cr * systemData.cr) * 100;
     }
 
     /**
@@ -102,11 +96,4 @@ export class NepheshriaActor extends Actor {
 
         // Process additional NPC data here.
     }
-
-
-    createOwnedItem(itemData) {
-        console.log("Nepheshria  | createOwnedItem");
-
-    }
-
 }
