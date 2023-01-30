@@ -88,21 +88,48 @@
               </select>
             </td>
           </tr>
-          <!--
-                "profession": "",
-                "age": 0,
-                "passionTheme": [
-                  "",
-                  "",
-                  ""
-                ]
-          -->
+          <tr>
+            <td>
+              <label for="system.actor.profession">{{localize "NEPHESHRIA.sheet.profession"}}</label>
+            </td>
+            <td>
+              <input id="system.actor.profession" name="system.actor.profession" value="{{system.actor.profession}}" type="text" data-type="String">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="system.actor.age">{{localize "NEPHESHRIA.sheet.age"}}</label>
+            </td>
+            <td>
+              <input id="system.actor.age" name="system.actor.age" value="{{system.actor.age}}" type="number" step="1" min="0" data-type="Number">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="system.actor.passionTheme">{{localize "NEPHESHRIA.sheet.passionTheme"}}</label>
+            </td>
+            <td>
+              <table id="system.actor.passionTheme">
+                <tbody>
+                <tr>
+                  <input id="system.actor.passionTheme.t1" name="system.actor.passionTheme.t1" value="{{system.actor.passionTheme.t1}}" type="text" data-type="String">
+                </tr>
+                <tr>
+                  <input id="system.actor.passionTheme.t2" name="system.actor.passionTheme.t2" value="{{system.actor.passionTheme.t2}}" type="text" data-type="String">
+                </tr>
+                <tr>
+                  <input id="system.actor.passionTheme.t3" name="system.actor.passionTheme.t3" value="{{system.actor.passionTheme.t3}}" type="text" data-type="String">
+                </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
           </tbody>
         </table>
         <br>
       </div>
-    </div>
       {{> "systems/nepheshria/templates/actor/parts/actor-stats.html"}}
+    </div>
 
 
     {{!-- Owned Items Tab --}}

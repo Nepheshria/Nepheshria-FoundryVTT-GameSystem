@@ -112,7 +112,11 @@
       "addItem": " Add Item",
       "hp": "Health",
       "mp": "Energy",
-      "alignment": "Alignment"
+      "alignment": "Alignment",
+      "race": "Race",
+      "profession": "Profession",
+      "age": "Age",
+      "passionTheme": "Passions & Themes"
     }
   }
 }

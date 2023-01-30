@@ -43,11 +43,11 @@
       "race": "",
       "profession": "",
       "age": 0,
-      "passionTheme": [
-        "",
-        "",
-        ""
-      ]
+      "passionTheme": {
+        "t1": "Theme 1",
+        "t2": "Theme 2",
+        "t3": "Theme 3"
+      }
     },
     "npc": {
       "templates": ["base", "abilities"]
