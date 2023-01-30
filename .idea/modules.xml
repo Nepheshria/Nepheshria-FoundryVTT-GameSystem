@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Nepheshria-FoundryVTT-GameSystem.iml" filepath="$PROJECT_DIR$/.idea/Nepheshria-FoundryVTT-GameSystem.iml" />
       <module fileurl="file://$APPLICATION_HOME_DIR$/bin/D:/programme/Foundry Virtual Tabletop/resources/app/.idea/app.iml" filepath="$APPLICATION_HOME_DIR$/bin/D:/programme/Foundry Virtual Tabletop/resources/app/.idea/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../boilerplate-master/.idea/boilerplate-master.iml" filepath="$PROJECT_DIR$/../boilerplate-master/.idea/boilerplate-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../boilerplate/.idea/boilerplate.iml" filepath="$PROJECT_DIR$/../boilerplate/.idea/boilerplate.iml" />
       <module fileurl="file://$USER_HOME$/FoundryVTT/FoundryVTT-10.291/resources/app/client/core/.idea/core.iml" filepath="$USER_HOME$/FoundryVTT/FoundryVTT-10.291/resources/app/client/core/.idea/core.iml" />
     </modules>
   </component>

@@ -105,11 +105,11 @@ export class NepheshriaActorSheet extends ActorSheet {
             i.img = i.img || DEFAULT_TOKEN;
             // Append to inventory.
             if (i.type === 'mastery') {
-                skills.push(i);
+                masteries.push(i);
             }
             // Append to skills.
             else if (i.type === 'skill') {
-                masteries.push(i);
+                skills.push(i);
             }
             // Append to masteries.
             else if (i.type !== 'spell') {

@@ -62,3 +62,31 @@ NEPHESHRIA.level = {
     god: "NEPHESHRIA.level.god",
     transcendent: "NEPHESHRIA.level.transcendent"
 };
+
+/**
+ * The differents alignment
+ * @type {Object}
+ */
+NEPHESHRIA.alignment = {
+    control: "NEPHESHRIA.alignment.control",
+    intellect: "NEPHESHRIA.alignment.intellect",
+    neutral: "NEPHESHRIA.alignment.neutral",
+    passion: "NEPHESHRIA.alignment.passion",
+    freedom: "NEPHESHRIA.alignment.freedom",
+}
+
+/**
+ * The differents races
+ * @type {Object}
+ */
+NEPHESHRIA.race = {
+    phusilians: "NEPHESHRIA.race.phusilians",
+    aluros: "NEPHESHRIA.race.aluros",
+    lycaons: "NEPHESHRIA.race.lycaons",
+    saurignians: "NEPHESHRIA.race.saurignians",
+    humans: "NEPHESHRIA.race.humans",
+    nephesselaians: "NEPHESHRIA.race.nephesselaians",
+    erebonix: "NEPHESHRIA.race.erebonix",
+    bubulains: "NEPHESHRIA.race.bubulains",
+    pagmayins: "NEPHESHRIA.race.pagmayins"
+}

@@ -81,11 +81,38 @@
       "god": "God",
       "transcendent": "Transcendent"
     },
+    "alignment": {
+      "control": "Control",
+      "intellect": "Intellect",
+      "neutral": "Neutral",
+      "passion": "Passion",
+      "freedom": "Freedom"
+    },
+    "race": {
+      "phusilians": "Phusilians",
+      "aluros": "Aluros",
+      "lycaons": "Lycaons",
+      "saurignians": "Saurignians",
+      "humans": "Humans",
+      "nephesselaians": "Nephesselaians",
+      "erebonix": "Erebonix",
+      "bubulains": "Bubulains",
+      "pagmayins": "Pagmayins"
+    },
+
     "sheet": {
-      "addSkill": "Add Skill",
+      "addSkill": " Add Skill",
+      "addMastery": " Add Mastery",
       "newItem": "New Item",
       "level": "Level",
-      "spells": "Spells"
+      "spells": "Spells",
+      "stats": "Stats",
+      "name": "Name",
+      "quantity": "Quantity",
+      "addItem": " Add Item",
+      "hp": "Health",
+      "mp": "Energy",
+      "alignment": "Alignment"
     }
   }
 }

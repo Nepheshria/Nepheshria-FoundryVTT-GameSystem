@@ -7,11 +7,13 @@
     return loadTemplates([
 
         // Actor partials.
-        "systems/nepheshria/templates/actor/parts/actor-features.html",
         "systems/nepheshria/templates/actor/parts/actor-items.html",
         "systems/nepheshria/templates/actor/parts/actor-spells.html",
+        "systems/nepheshria/templates/actor/parts/actor-skills.html",
+        "systems/nepheshria/templates/actor/parts/actor-masteries.html",
         "systems/nepheshria/templates/actor/parts/actor-effects.html",
         "systems/nepheshria/templates/actor/parts/actor-stats.html",
+        "systems/nepheshria/templates/actor/parts/actor-stats-cara.html",
 
         // Item partials
         "systems/nepheshria/templates/item/parts/item-requirements.html"

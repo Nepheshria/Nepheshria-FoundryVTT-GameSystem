@@ -1,0 +1,33 @@
+<div class="resource">
+    <table>
+        <tbody>
+        <tr>
+            <td>
+                <label for="system.actor.alignment">{{localize "NEPHESHRIA.sheet.alignment"}}</label>
+            </td>
+            <td>
+                <select id="system.actor.alignment" name="system.actor.alignment">
+                    {{#select system.actor.alignment}}
+                    {{#each config.alignment as |name alignment|}}
+                    <option value="{{alignment}}">{{localize name}}</option>
+                    {{/each}}
+                    {{/select}}
+                </select>
+            </td>
+        </tr>
+<!--
+      "alignment": "",
+      "race": "",
+      "profession": "",
+      "age": 0,
+      "passionTheme": [
+        "",
+        "",
+        ""
+      ]
+-->
+        </tbody>
+    </table>
+    <br>
+</div>
+
