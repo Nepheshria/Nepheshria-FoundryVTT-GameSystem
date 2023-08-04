@@ -11,12 +11,8 @@
       "url": "https://villerotjustin.github.io/Portefolio/index.html"
     }
   ],
-  "esmodules": [
-    "module/nepheshria.mjs"
-  ],
-  "styles": [
-    "css/nepheshria.css"
-  ],
+  "esmodules": ["module/nepheshria.mjs"],
+  "styles": ["css/nepheshria.css"],
   "scripts": [],
   "packs": [],
   "languages": [
@@ -28,7 +24,8 @@
   ],
   "compatibility": {
     "minimum": 10,
-    "verified": "10.288"
+    "verified": "10.288",
+    "maximum": 99
   },
   "gridDistance": 1,
   "gridUnits": "meter",
